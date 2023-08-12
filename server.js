@@ -23,7 +23,7 @@ app.use(cors());
 //user routes
 app.use("/api/v1/users", require("./routes/userRoute"));
 //transections routes
-app.use("/api/v1/transections", require("./routes/transectionRoutes"));
+app.use("/api/v1/transections",require("./routes/transectionRoutes"));
 
 //static files
 app.use(express.static(path.join(__dirname, "./client/build")));
